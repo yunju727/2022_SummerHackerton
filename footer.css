@@ -38,7 +38,7 @@ footer a:visited{
     color: rgb(0, 38, 103);
 }
 @media (max-width:1000px){
-    footer{
+    /* footer{
         height: 2rem;
     }
     footer>ul{
@@ -48,14 +48,14 @@ footer a:visited{
         margin-left:.5rem;
     }
     footer>p{
-        font-size:.95rem;
+        font-size:3vw;
         margin-left:5vw;
     }
 
     footer .menu{
-        /* display: none; */
         border: none;
         background:transparent;
-        font-size: 1rem;
-    }
+        font-size: 2vw;
+    } */
+    footer{display:none}
 }
