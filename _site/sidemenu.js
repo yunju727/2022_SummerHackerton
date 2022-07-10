@@ -38,3 +38,10 @@ var sidemenu = `    <div id = "sidemenu" class="sidenav">
 </div>`;
 
 document.write(sidemenu);
+
+function opensidemenu(){
+    document.getElementById('sidemenu').style.width='250px';
+}
+function closesidemenu(){
+    document.getElementById('sidemenu').style.width='0';
+}

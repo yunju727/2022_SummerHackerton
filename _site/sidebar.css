@@ -93,6 +93,7 @@ input[id*="answer"] + label a:hover{
 
 input[id*="answer"] + label em{
     position:absolute;
+    opacity: 50%;
     top: 50%; right: 1rem;
     width: 1rem; height: 1rem;
     margin-top: -.5rem;
