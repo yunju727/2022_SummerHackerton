@@ -115,16 +115,16 @@ header a:visited{
         height: 1rem;
     }
     header>ul#right>li{
-        margin-right:2.5vw;
+        margin-right:.2rem;
     }
     header>ul#right>li:last-child{
-        margin-right:10vw;
+        margin-right:1rem;
     }
     header>ul#left>li{
-        margin-left:2.5vw;
+        margin-left:.2rem;
     }
     header>ul#left>li:nth-child(1){
-        margin-left:10vw;
+        margin-left:1rem;
     }
 
     header .menu{
