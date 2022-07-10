@@ -64,7 +64,7 @@ input[id*="answer"] + label{
     background-color: white;
     cursor:pointer; position: relative;
 }
-input[id*="answer"] + label:last-child{
+#answer04 + label{
     border-bottom:1.5px solid rgb(70, 70, 70);
 }
 
