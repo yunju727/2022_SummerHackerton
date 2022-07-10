@@ -9,7 +9,7 @@
     z-index: 100;
     top: 0; left:0;
     background-color:rgb(212, 222, 255);
-    opacity: .9;
+    opacity: .93;
     overflow-x: hidden;
     padding-top:3rem;
     transition: 0.5s;
@@ -18,7 +18,7 @@
 .sidenav li{
     list-style-type: none;
 }
-.sidenav a{
+.sidenav label + ul a{
     text-decoration: none;
     font-size: .8rem;
     display: block;
@@ -26,21 +26,27 @@
     transition: .3s;
     margin: 0 .75rem;
     padding: .5rem .75rem;
-}
-.sidenav ul a{
     background-color: white;
     border:1.5px solid rgb(70, 70, 70);
     border-bottom:0;
 }
-.sidenav a:hover{
+.sidenav label + ul a:hover{
+    background-color: rgb(229, 229, 229);
+}
+.sidenav label + ul a:hover{
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-.sidenav a:visited{
+.sidenav label + ul a:visited{
     text-decoration: none;
     color: rgb(91, 91, 91);
 }
 .sidenav .close{
+    text-decoration: none;
+    display: block;
+    color: rgb(91, 91, 91);
+    transition: .3s;
+    padding: .5rem .75rem;
     position: absolute;
     padding-right:0; margin-right: 0;
     top: 0; right: .75rem;
@@ -56,7 +62,7 @@ input[id*="answer"]{
 
 input[id*="answer"] + label{
     display:block;
-    padding: .75rem;
+    padding: .5rem .75rem;
     margin: 0 .75rem;
     border: 1.5px solid rgb(70, 70, 70);
     border-bottom:0;
@@ -64,8 +70,25 @@ input[id*="answer"] + label{
     background-color: white;
     cursor:pointer; position: relative;
 }
+input[id*="answer"] + label a{
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+}
+input[id*="answer"] + label a:visited{
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+}
+input[id*="answer"] + label a:hover{
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+}
 #answer04 + label{
     border-bottom:1.5px solid rgb(70, 70, 70);
+}
+
+#ko{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
 }
 
 input[id*="answer"] + label em{
@@ -97,3 +120,11 @@ input[id*="answer"]:checked + label em{
     transition:0.3s;
     background: url('./image/circle-xmark-solid.svg') 0 0 no-repeat;
 }
+
+body::-webkit-scrollbar{ width: 8px;}
+body::-webkit-scrollbar-track{ background-color: rgb(255, 255, 255);}
+body::-webkit-scrollbar-thumb{background-color: rgb(181, 189, 255);}
+
+div.sidenav::-webkit-scrollbar{ width: 8px;}
+div.sidenav::-webkit-scrollbar-track{ background-color: rgb(255, 255, 255);}
+div.sidenav::-webkit-scrollbar-thumb{background-color: rgb(154, 164, 255);}

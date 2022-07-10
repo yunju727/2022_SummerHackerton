@@ -90,7 +90,7 @@ header a:visited{
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 .custom-shape-divider-top-1657463136 {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
