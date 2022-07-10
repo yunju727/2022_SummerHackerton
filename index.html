@@ -13,41 +13,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f76d1c9984.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 <body>
-    <!-- <nav class="sidebar">
-        <span class="open-slide">
-            <a href="#">
-                <svg width="30" height="30">
-                    <path d = "M0, 5 30,5" stroke = "#fff" stroke-width="5"/>
-                    <path d = "M0, 14 30,14" stroke = "#fff" stroke-width="5"/>
-                    <path d = "M0, 23 30,23" stroke = "#fff" stroke-width="5"/>
-                </svg>
-            </a>        
-        </span>
-        <ul class="navbar">
-            <li><a href="#">서울</a></li>
-            <li><a href="#">경기</a></li>
-            <li><a href="#">인천</a></li>
-            <li><a href="#">부산</a></li>
-            <li><a href="#">제주</a></li>
-            <li><a href="#">강원</a></li>
-            <li><a href="#">경상</a></li>
-            <li><a href="#">전라</a></li>
-            <li><a href="#">충청</a></li>
-        </ul>
-    </nav> -->
+
     <div id = "sidemenu" class="sidenav">
         <li><a href="#" class="close" onclick="closesidemenu()">&times;</a></li>
-        <li><a href="#">서울</a></li>
-        <li><a href="#">경기</a></li>
-        <li><a href="#">인천</a></li>
-        <li><a href="#">부산</a></li>
-        <li><a href="#">제주</a></li>
-        <li><a href="#">강원</a></li>
-        <li><a href="#">경상</a></li>
-        <li><a href="#">전라</a></li>
-        <li><a href="#">충청</a></li>
+
+        <ul class="cur">
+          <li>
+            <input type="checkbox" id = "answer01">
+            <label for="answer01">Region<em></em></label>
+            <ul>
+                <li><a href="#">서울</a></li>
+                <li><a href="#">경기</a></li>
+                <li><a href="#">인천</a></li>
+                <li><a href="#">부산</a></li>
+                <li><a href="#">제주</a></li>
+                <li><a href="#">강원</a></li>
+                <li><a href="#">경상</a></li>
+                <li><a href="#">전라</a></li>
+                <li><a href="#">충청</a></li>
+            </ul>
+          </li>
+          <li>
+            <input type="checkbox" id = "answer02">
+            <label for="answer02">Share Plan<em></em></label>
+          </li>
+          <li>
+            <input type="checkbox" id = "answer03">
+            <label for="answer03">Contact<em></em></label>
+            <ul>
+                <li><a href="#">kakaotalk</a></li>
+                <li><a href="#">instagram</a></li>
+                <li><a href="#">mail</a></li>
+            </ul>
+          </li>
+          <li>
+            <input type="checkbox" id = "answer04">
+            <label for="answer04">Bug report<em></em></label>
+          </li>
+        </ul>
     </div>
     <script>
         function opensidemenu(){
