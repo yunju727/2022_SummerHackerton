@@ -79,7 +79,7 @@ input[id*="reg"] + label em{
     position:absolute;
     opacity:30%;
     top: 50%; right: .5rem;
-    width: 1rem; height: 1rem;
+    width: .8rem; height: .8rem;
     margin-top: -.5rem;
     display: inline-block;
     transition:.3s;
@@ -97,12 +97,7 @@ input[id*="reg"]:checked + label+ ul{
 }
 
 input[id*="reg"]:checked + label em{
-    position:absolute;
 
-    top: 50%; right: .5rem;
-    width: 1rem; height: 1rem;
-    margin-top: -.5rem;
-    display: inline-block;
     transition:.3s;
     background: url('./image/angle-down-solid.svg') 0 0 no-repeat;
 }
