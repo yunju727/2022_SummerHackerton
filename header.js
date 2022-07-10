@@ -1,6 +1,6 @@
 var header = `
 <ul id = "left">
-    <li><button class = " menu" ><a href="#">&#9776;</a></button></li>
+    <li><button class = " menu" ><a href="#" onclick="opensidemenu()">&#9776;</a></button></li>
     <li><button class = "menu" ><a href="index.html">Home</a></button></li>
     <li><button class = "menu del" ><a href="#">Contact</a></button></li>
     <li><button class = "menu del" ><a href="#">Bug report</a></button></li>

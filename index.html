@@ -7,13 +7,58 @@
     <title>TRAVEL</title>
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
     <!-- <link rel="stylesheet" href="footer.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f76d1c9984.js" crossorigin="anonymous"></script>
 </head>
-<body >
+<body>
+    <!-- <nav class="sidebar">
+        <span class="open-slide">
+            <a href="#">
+                <svg width="30" height="30">
+                    <path d = "M0, 5 30,5" stroke = "#fff" stroke-width="5"/>
+                    <path d = "M0, 14 30,14" stroke = "#fff" stroke-width="5"/>
+                    <path d = "M0, 23 30,23" stroke = "#fff" stroke-width="5"/>
+                </svg>
+            </a>        
+        </span>
+        <ul class="navbar">
+            <li><a href="#">서울</a></li>
+            <li><a href="#">경기</a></li>
+            <li><a href="#">인천</a></li>
+            <li><a href="#">부산</a></li>
+            <li><a href="#">제주</a></li>
+            <li><a href="#">강원</a></li>
+            <li><a href="#">경상</a></li>
+            <li><a href="#">전라</a></li>
+            <li><a href="#">충청</a></li>
+        </ul>
+    </nav> -->
+    <div id = "sidemenu" class="sidenav">
+        <li><a href="#" class="close" onclick="closesidemenu()">&times;</a></li>
+        <li><a href="#">서울</a></li>
+        <li><a href="#">경기</a></li>
+        <li><a href="#">인천</a></li>
+        <li><a href="#">부산</a></li>
+        <li><a href="#">제주</a></li>
+        <li><a href="#">강원</a></li>
+        <li><a href="#">경상</a></li>
+        <li><a href="#">전라</a></li>
+        <li><a href="#">충청</a></li>
+    </div>
+    <script>
+        function opensidemenu(){
+            document.getElementById('sidemenu').style.width='250px';
+        }
+        function closesidemenu(){
+            document.getElementById('sidemenu').style.width='0';
+        }
+    </script>
+
+
     <div class="container">
         <div class="custom-shape-divider-top-1657463136">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -32,19 +77,15 @@
             </main>
             <aside class = "item">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus a, assumenda impedit dicta explicabo tempore blanditiis laudantium consequatur expedita quia.</p>
-
                 <ol>
                     <li>여행 계획을 한 눈에</li>
                     <li>지역 별로 확인</li>
                     <li>알려지지 않은 관광지가 알고 싶다면</li>
                     <li>여행 전문가들의 꿀팁</li>
                 </ol>
-
                 <br><a href="#">GO TO SEE PLANS</a>
             </aside>
         </section>
-        
     </div>
-    
 </body>
 </html>
