@@ -115,3 +115,9 @@ input[id*="reg"]:checked + label em{
     }
 }
 
+@media (max-width:800px){
+    .nav_r{
+        display:none;
+    }
+}
+
