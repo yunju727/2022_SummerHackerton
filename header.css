@@ -7,55 +7,71 @@ header{
     position:fixed; display:flex;
     justify-content: space-between;
     top:0;left:0;
-    height: 3rem;
-    margin: .5rem 0;
+    height: 2rem;
+    padding: 2rem 0;
     align-items: center;
-    background:transparent;
+    background:white;
     z-index:50;
 }
 header>ul{
     display: flex;
-    margin-right: 6rem;;
+    padding:0;
 }
 header>ul>li{
     list-style-type: none;
-    margin-left:.5rem;
+}
+header>ul#right>li{
+    margin-right:1rem;
+}
+header>ul#right>li:last-child{
+    margin-right:3rem;
+}
+header>ul#left>li{
+    margin-left:1rem;
+}
+header>ul#left>li:nth-child(1){
+    margin-left:3rem;
 }
 header .menu{
     /* display: none; */
     border: none;
     background:transparent;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 header a{
-    color: rgb(0, 38, 103);
+    color: rgb(76, 76, 76);
     /* text-shadow: 1px 1px 1px rgba(0,0,0,1); */
     text-decoration: none;
 }
 header a:visited{
     text-decoration: none;
-    color: rgb(0, 38, 103);
+    color: rgb(76, 76, 76);
 }
 @media (max-width:1000px){
     header{
-        height: 2rem;
+        height: 1rem;
     }
-    header>ul{
-        margin-right: 5vw;;
+    header>ul#right>li{
+        margin-right:2.5vw;
     }
-    header>ul>li{
-        margin-left:.0;
+    header>ul#right>li:last-child{
+        margin-right:10vw;
     }
-    header>p{
-        font-size:.95rem;
-        margin-left:5vw;
+    header>ul#left>li{
+        margin-left:2.5vw;
+    }
+    header>ul#left>li:nth-child(1){
+        margin-left:10vw;
     }
 
     header .menu{
         /* display: none; */
         border: none;
-        background:transparent;
-        font-size: 1rem;
+        background:white;
+        font-size: .8rem;
+    }
+    header .del{
+        display:none;
     }
 }
 .hvr-float-shadow {
