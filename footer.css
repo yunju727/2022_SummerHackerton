@@ -8,8 +8,8 @@ footer{
     font-size:.8rem;
     font-weight:500;
     align-items: center;
-    background: rgba(22,14,161,.5);
-    background: linear-gradient(90deg, rgba(22,14,161,.3) 0%, rgba(31,31,154,.3) 10%, rgba(0,212,255,.3) 100%);
+    /* background: rgba(22,14,161,.5);
+    background: linear-gradient(90deg, rgba(22,14,161,.3) 0%, rgba(31,31,154,.3) 10%, rgba(0,212,255,.3) 100%); */
     z-index:50;
 }
 footer>ul{
