@@ -10,7 +10,7 @@ header{
     height: 2rem;
     padding: 2rem 0;
     align-items: center;
-    background:white;
+    /* background:white; */
     z-index:50;
 }
 header>ul{
@@ -47,33 +47,7 @@ header a:visited{
     text-decoration: none;
     color: rgb(76, 76, 76);
 }
-@media (max-width:1000px){
-    header{
-        height: 1rem;
-    }
-    header>ul#right>li{
-        margin-right:2.5vw;
-    }
-    header>ul#right>li:last-child{
-        margin-right:10vw;
-    }
-    header>ul#left>li{
-        margin-left:2.5vw;
-    }
-    header>ul#left>li:nth-child(1){
-        margin-left:10vw;
-    }
 
-    header .menu{
-        /* display: none; */
-        border: none;
-        background:white;
-        font-size: .8rem;
-    }
-    header .del{
-        display:none;
-    }
-}
 .hvr-float-shadow {
   display: inline-block;
   vertical-align: middle;
@@ -114,4 +88,58 @@ header a:visited{
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.custom-shape-divider-top-1657463136 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1657463136 svg {
+    position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 180px;
+}
+
+.custom-shape-divider-top-1657463136 .shape-fill {
+    fill: #FFFFFF;
+}
+
+@media (max-width:1000px){
+    header{
+        height: 1rem;
+    }
+    header>ul#right>li{
+        margin-right:2.5vw;
+    }
+    header>ul#right>li:last-child{
+        margin-right:10vw;
+    }
+    header>ul#left>li{
+        margin-left:2.5vw;
+    }
+    header>ul#left>li:nth-child(1){
+        margin-left:10vw;
+    }
+
+    header .menu{
+        /* display: none; */
+        border: none;
+        background:white;
+        font-size: .8rem;
+    }
+    header .del{
+        display:none;
+    }
+    .custom-shape-divider-top-1657463136 svg {
+        position: relative;
+        display: block;
+        width: calc(230% + 1.3px);
+        height: 140px;
+    }
 }
