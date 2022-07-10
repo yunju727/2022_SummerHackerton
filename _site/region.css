@@ -1,5 +1,5 @@
 .nav_r{
-    opacity: .8;
+    opacity: .85;
     position: relative;
     font-family: 'Roboto Mono', monospace;
     top: 12rem;
@@ -51,7 +51,7 @@ input[id*="reg"] + label{
     border-bottom:0;
     color: rgb(70, 70, 70);
     font-size: .8rem;
-    background-color: rgb(199, 216, 247);
+    background-color: rgb(205, 223, 255);
     cursor:pointer; position: relative;
 }
 input[id*="reg"] + label a{
