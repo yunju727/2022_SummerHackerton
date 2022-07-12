@@ -1,1 +1,0 @@
-var i = document.getElementsByClassName("jjim").innerHTML
