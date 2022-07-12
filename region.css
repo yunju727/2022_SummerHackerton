@@ -102,10 +102,17 @@ input[id*="reg"]:checked + label em{
     background: url('./image/angle-down-solid.svg') 0 0 no-repeat;
 }
 
+
+
+
+
+
+
 #columns{
-    margin-left: 20%; margin-right: 20%;
-    column-width: 200px;
-    column-count: 4;
+    margin-left: 16rem; margin-right: 3rem;
+    position: absolute;
+    top: 12rem;
+    column-count: 3;
     column-gap: 30px;
 }
 #columns figure{
@@ -114,6 +121,8 @@ input[id*="reg"]:checked + label em{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     margin: 0; margin-bottom: 30px;
     padding : 10px;
+    height: 10rem;
+    overflow: auto;
 }
 #columns figure img{
     width: 100%;
@@ -123,18 +132,6 @@ input[id*="reg"]:checked + label em{
     padding: 10px;
     margin-top: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
