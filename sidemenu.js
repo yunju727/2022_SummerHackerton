@@ -23,16 +23,12 @@ var sidemenu = `    <div id = "sidemenu" class="sidenav">
     </li>
     <li>
     <input type="checkbox" id = "answer03">
-    <label for="answer03">Contact<em></em></label>
+    <label for="answer03">Bug report<em></em></label>
         <ul>
-            <li><a href="#">kakaotalk</a></li>
+            <li><a href="#" id = "first">kakaotalk</a></li>
             <li><a href="#">instagram</a></li>
-            <li><a href="#">mail</a></li>
+            <li><a href="#" id = "last">mail</a></li>
         </ul>
-    </li>
-    <li>
-        <input type="checkbox" id = "answer04">
-        <label for="answer04"><a href="#">Bug report</a><em></em></label>
     </li>
 </ul>
 </div>`;
