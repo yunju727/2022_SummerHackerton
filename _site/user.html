@@ -37,14 +37,11 @@
         </header>
         <section>
             <nav>
-                <li>기본 정보</li>
-                <li>문의</li>
+                <li><a href="user.html" class="side">기본 정보</a></li>
+                <li><a href="#" class="side">문의</a></li>
             </nav>
-            <main>
+            <main id="ko">
                 <div id = "index">
-                    <div class="profile">
-                        프로필 사진
-                    </div>
                     <div class="nickname">
                         닉네임
                     </div>
@@ -61,26 +58,32 @@
                         이메일
                     </div>
 
+
                 </div>
                 <div id = "info">
-                    <div class="profile">
-                        프로필 사진
-                    </div>
-                    <div class="nickname">
+                    <div class="nickname bor1">
                         <input type="text">
                     </div>
-                    <div class="name">
-                        이름
+                    <div class="name bor1">
+                        <input type="text">
                     </div>
-                    <div class="birth">
-                        <input type="number" value="2022" min="1900" max="2022" step="1">년
+                    <div class="birth bor1">
+                        <input type="number" value="2022" min="1950" max="2022" step="1"> 년
+                        <input type="number" value="1" min="1" max="12" step="1"> 월
+                        <input type="number" value="1" min="1" max="31" step="1"> 일
                     </div>
                     <div class="gender">
-                        성별
+                        <button>남성</button>
+                        <button>여성</button>
+                        <button>기타</button>
                     </div>
-                    <div class="email">
+                    <div class="email bor1">
                         <input type="email">
                     </div>
+                    <div class="submit">
+                        <input type="submit" value="변경사항 저장">
+                    </div>
+
                 </div>
             </main>
         </section>

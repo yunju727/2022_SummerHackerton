@@ -1,11 +1,102 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
 .container, main, .index, .info, section{
     display: flex;
 }
 
 .container{
-    margin-top: 12rem;
+    height: 100%;
 }
-
+section{
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0 10rem;
+    margin-top: 12rem;
+    margin-bottom: 3rem;
+    background-color: rgb(224, 228, 255);
+    border-radius: .5rem;
+}
+nav{
+    font-weight: 700;
+    flex-basis: 12rem;
+    border-right: 1px solid rgb(70,70,70);
+}
+nav li{
+    list-style-type: none;
+}
+nav li a{
+    text-decoration: none;
+    font-size: .85rem;
+    display: block;
+    color: rgb(91, 91, 91);
+    padding: .5rem 2rem;
+    border-bottom:0;
+}
+nav li a:hover{
+    text-decoration: none;
+    color: rgb(93, 98, 254);
+}
+nav li a:visited{
+    text-decoration: none;
+}
+main{
+    padding: .5rem 0;
+    margin: 0 3rem;
+    width: 100%;
+    font-size: .8rem;
+    color: rgb(100, 100, 100);
+}
+main div{
+    flex-basis: 10rem;
+    height: 3rem;
+}
+main #info{
+    flex-basis: 40rem;
+    height: 3rem;
+}
 .index, .info{
     flex-direction: column;
+}
+
+.bor1 input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: .2rem;
+}
+
+.gender button{
+    padding: .2rem .5rem;
+    margin-right: .5rem;
+    border-radius: 2rem;
+    border: 1px solid rgb(100, 100, 100);
+    background: transparent;
+}
+
+.gender button:hover{
+    border-color:rgb(146, 150, 250);
+    background: rgb(146, 150, 250);
+    color: rgb(247, 247, 247);
+}
+
+.submit{
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.submit input{
+    font-size:.75rem;
+    padding: .4rem 1.5rem;
+    border-radius: 2rem;
+    border:1px solid rgb(146, 150, 250);
+    background: rgb(146, 150, 250);
+    color: rgb(247, 247, 247);
+}
+
+.submit input:hover{
+    border-color:rgb(93, 98, 254);
+    background: rgb(93, 98, 254);
+    color: rgb(247, 247, 247);
 }
