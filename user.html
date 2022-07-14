@@ -7,7 +7,7 @@
     <title>TRAVEL</title>
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="sidebar.css">
-    <link rel="stylesheet" href="region.css">
+    <link rel="stylesheet" href="user.css">
     <!-- <link rel="stylesheet" href="footer.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,64 +24,9 @@
 </head>
 <body>
     <script src="sidemenu.js"></script>
-    <script src="regionbar.js"></script>
 
 
     <div class="container">
-
-
-
-        <div id="columns">
-            <figure>
-              <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/cinderella.jpg">
-              <figcaption>Cinderella wearing European fashion of the mid-1860’s</figcaption>
-            </figure>
-       
-            <figure>
-              <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/rapunzel.jpg">
-              <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
-            </figure>
-       
-            <figure>
-              <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/belle.jpg">
-              <figcaption>Belle, based on 1770’s French court fashion</figcaption>
-            </figure>
-       
-            <figure>
-              <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mulan_2.jpg">
-              <figcaption>Mulan, based on the Ming Dynasty period</figcaption>
-            </figure>
-       
-            <figure>
-              <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sleeping-beauty.jpg">
-              <figcaption>Sleeping Beauty, based on European fashions in 1485</figcaption>
-            </figure>
-       
-            <figure>
-              <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pocahontas_2.jpg">
-              <figcaption>Pocahontas based on 17th century Powhatan costume</figcaption>
-            </figure>
-       
-            <figure>
-              <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/snow-white.jpg">
-              <figcaption>Snow White, based on 16th century German fashion</figcaption>
-            </figure>    
-       
-            <figure>
-              <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ariel.jpg">
-              <figcaption>Ariel wearing an evening gown of the 1890’s</figcaption>
-            </figure>
-       
-            <figure>
-              <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/tiana.jpg">
-              <figcaption>Tiana wearing the <i>robe de style</i> of the 1920’s</figcaption>
-            </figure>   
-          </div>
-
-
-
-
-          
         <div class="custom-shape-divider-top-1657463136">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
@@ -90,7 +35,55 @@
         <header class = "main">
             <script src="header.js"></script>
         </header>
-        
+        <section>
+            <nav>
+                <li>기본 정보</li>
+                <li>문의</li>
+            </nav>
+            <main>
+                <div id = "index">
+                    <div class="profile">
+                        프로필 사진
+                    </div>
+                    <div class="nickname">
+                        닉네임
+                    </div>
+                    <div class="name">
+                        이름
+                    </div>
+                    <div class="birth">
+                        생일
+                    </div>
+                    <div class="gender">
+                        성별
+                    </div>
+                    <div class="email">
+                        이메일
+                    </div>
+
+                </div>
+                <div id = "info">
+                    <div class="profile">
+                        프로필 사진
+                    </div>
+                    <div class="nickname">
+                        <input type="text">
+                    </div>
+                    <div class="name">
+                        이름
+                    </div>
+                    <div class="birth">
+                        <input type="number" value="2022" min="1900" max="2022" step="1">년
+                    </div>
+                    <div class="gender">
+                        성별
+                    </div>
+                    <div class="email">
+                        <input type="email">
+                    </div>
+                </div>
+            </main>
+        </section>
 
     </div>
 </body>

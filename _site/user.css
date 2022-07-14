@@ -1,0 +1,11 @@
+.container, main, .index, .info, section{
+    display: flex;
+}
+
+.container{
+    margin-top: 12rem;
+}
+
+.index, .info{
+    flex-direction: column;
+}
