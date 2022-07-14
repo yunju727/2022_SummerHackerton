@@ -7,7 +7,7 @@ var header = `
 <ul id = "right">
     <li><button class = "hvr-float-shadow menu del" ><a href="#"><i class="fa-regular fa-pen-to-square"></i></a></button></li>
     <li><button class = "hvr-float-shadow menu" ><a href="#"><i class="fa-regular fa-heart"></i></a></button></li>
-    <li><button class = "hvr-float-shadow menu" ><a href="#"><i class="fa-regular fa-user"></i></a></button></li>
+    <li><button class = "hvr-float-shadow menu" ><a href="user.html"><i class="fa-regular fa-user"></i></a></button></li>
 </ul>
 `;
 
