@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	<title>GeeksforGeeks Editor</title>
+<!-- include libraries(jQuery, bootstrap) -->
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+
+<!-- include summernote css/js-->
+<link href="summernote/summernote.css" rel="stylesheet">
+<script src="summernote/summernote.js"></script>
+<style>
+    html{
+        height:100%
+    }
+    body{
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    div.note-frame{
+        width:80%;
+    }
+    div.note-editable{
+        height:500px;
+    }
+    input{
+        width:80%;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        height:40px;
+        font-size:1.8rem;
+    }
+</style>
+</head>
+
+<body>
+    <input type="text" placeholder="제목">
+    <div id="summernote">여행 계획을 작성해주세요</div>
+    <script>
+        $(document).ready(function() { $('#summernote').summernote();
+        });
+
+    </script>
+
+</body>
+
+</html>
