@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="bug report.css">
     <!-- <link rel="stylesheet" href="footer.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,48 +41,32 @@
                 <li><a href="user.html" class="side">기본 정보</a></li>
                 <li><a href="bug report.html" class="side">문의</a></li>
             </nav>
-            <main>
-                <div id = "index" class="ko">
+            <main class="ko">
+                <div class="ko" id = "index">
                     <div class="nickname">
-                        닉네임
+                        문의 분류 선택
                     </div>
                     <div class="name">
-                        이름
-                    </div>
-                    <div class="birth">
-                        생일
-                    </div>
-                    <div class="gender">
-                        성별
-                    </div>
-                    <div class="email">
-                        이메일
+                        내용 작성
                     </div>
 
 
                 </div>
-                <div id = "info" class="ko">
-                    <div class="nickname bor1">
-                        <input type="text">
+                <div id = "info">
+                    <div class="chap ko">
+                        <select>
+                            <option>선택하세요</option>
+                            <option>가입</option>
+                            <option>보안 문의</option>
+                            <option>기타</option>
+                        </select>
                     </div>
-                    <div class="name bor1">
-                        <input type="text">
+                    <div class="text" id="text">
+                        <textarea class="ko"rows="1" placeholder = "문의 내용을 작성해주세요"></textarea>
                     </div>
-                    <div class="birth bor1">
-                        <input type="number" value="2022" min="1950" max="2022" step="1"> 년
-                        <input type="number" value="1" min="1" max="12" step="1"> 월
-                        <input type="number" value="1" min="1" max="31" step="1"> 일
-                    </div>
-                    <div class="gender">
-                        <button>남성</button>
-                        <button>여성</button>
-                        <button>기타</button>
-                    </div>
-                    <div class="email bor1">
-                        <input type="email">
-                    </div>
+
                     <div class="submit">
-                        <input type="submit" value="변경사항 저장">
+                        <input type="submit" value="문의하기">
                     </div>
 
                 </div>

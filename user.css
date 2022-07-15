@@ -2,6 +2,10 @@ html, body{
     height: 100%;
     margin: 0;
 }
+.ko{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
 .container, main, .index, .info, section{
     display: flex;
 }
@@ -18,7 +22,7 @@ section{
     background-color: rgb(224, 228, 255);
     border-radius: .5rem;
 }
-nav{
+nav.ko{
     font-weight: 700;
     flex-basis: 12rem;
     border-right: 1px solid rgb(70,70,70);
@@ -56,6 +60,9 @@ main #info{
     flex-basis: 40rem;
     height: 3rem;
 }
+main div#text.text{
+    height: 13rem;
+}
 .index, .info{
     flex-direction: column;
 }
@@ -63,9 +70,10 @@ main #info{
 .bor1 input{
     background: transparent;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(100, 100, 100);
     padding: .2rem;
 }
+
 
 .gender button{
     padding: .2rem .5rem;
@@ -99,4 +107,22 @@ main #info{
     border-color:rgb(93, 98, 254);
     background: rgb(93, 98, 254);
     color: rgb(247, 247, 247);
+}
+
+/* .chap select{
+
+} */
+.chap select{
+    width:12rem;
+    height: 1rem;
+    background: transparent;
+    border: none;
+    border-bottom:1px solid rgb(100, 100, 100);
+    box-shadow: none;
+}
+
+.text textarea{
+    width: 24rem;
+    height:12rem;
+    padding:1rem;
 }
