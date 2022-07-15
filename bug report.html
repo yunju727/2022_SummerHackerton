@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="user.css">
-    <link rel="stylesheet" href="bug report.css">
     <!-- <link rel="stylesheet" href="footer.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,21 +37,15 @@
         </header>
         <section>
             <nav class="ko">
-                <li><a href="user.html" class="side">기본 정보</a></li>
+                <li><a href="user.html" class="side" id="basic">기본 정보</a></li>
                 <li><a href="bug report.html" class="side">문의</a></li>
             </nav>
             <main class="ko">
-                <div class="ko" id = "index">
-                    <div class="nickname">
+                <div class="info1" id = "info">
+                    <div class="nickname tit">
                         문의 분류 선택
                     </div>
-                    <div class="name">
-                        내용 작성
-                    </div>
 
-
-                </div>
-                <div id = "info">
                     <div class="chap ko">
                         <select>
                             <option>선택하세요</option>
@@ -61,11 +54,14 @@
                             <option>기타</option>
                         </select>
                     </div>
+                    <div class="name tit">
+                        내용 작성
+                    </div>
                     <div class="text" id="text">
                         <textarea class="ko"rows="1" placeholder = "문의 내용을 작성해주세요"></textarea>
                     </div>
 
-                    <div class="submit">
+                    <div class="submit" id = "sub1">
                         <input type="submit" value="문의하기">
                     </div>
 
