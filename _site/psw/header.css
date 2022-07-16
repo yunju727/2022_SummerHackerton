@@ -147,3 +147,7 @@ header a:visited{
         height: 140px;
     }
 }
+
+body::-webkit-scrollbar{ width: 8px;}
+body::-webkit-scrollbar-track{ background-color: rgb(255, 255, 255);}
+body::-webkit-scrollbar-thumb{background-color: rgb(181, 189, 255);}

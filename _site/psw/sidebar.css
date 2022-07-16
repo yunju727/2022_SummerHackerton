@@ -128,9 +128,6 @@ input[id*="answer"]:checked + label em{
     background: url('../image/circle-xmark-solid.svg') 0 0 no-repeat;
 }
 
-body::-webkit-scrollbar{ width: 8px;}
-body::-webkit-scrollbar-track{ background-color: rgb(255, 255, 255);}
-body::-webkit-scrollbar-thumb{background-color: rgb(181, 189, 255);}
 
 div.sidenav::-webkit-scrollbar{ width: 8px;}
 div.sidenav::-webkit-scrollbar-track{ background-color: rgb(255, 255, 255);}
