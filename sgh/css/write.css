@@ -1,13 +1,7 @@
-html, body{
-    height:100%;
-}
-body, .container, section, .wr{
+.container, section, .wr{
     display:flex;
 }
-body{
-    flex-direction: column;
 
-}
 .container{
     flex-direction: column;
     width: 100%;
