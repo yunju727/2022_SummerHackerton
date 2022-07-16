@@ -19,7 +19,7 @@ var sidemenu = `    <div id = "sidemenu" class="sidenav">
     </li>
     <li>
         <input type="checkbox" id = "answer02">
-        <label for="answer02"><a href="#">Share Plan</a><em></em></label>
+        <label for="answer02"><a href="../sgh/write1">Share Plan</a><em></em></label>
     </li>
     <li>
     <input type="checkbox" id = "answer03">
@@ -27,7 +27,9 @@ var sidemenu = `    <div id = "sidemenu" class="sidenav">
         <ul>
             <li><a href="#" id = "first">kakaotalk</a></li>
             <li><a href="#">instagram</a></li>
-            <li><a href="#" id = "last">mail</a></li>
+            <li><a href="#">mail</a></li>
+            <li><a href="bug report.html" id = "last">report page</a></li>
+
         </ul>
     </li>
 </ul>
