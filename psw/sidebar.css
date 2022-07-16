@@ -105,7 +105,7 @@ input[id*="answer"] + label em{
     margin-top: -.5rem;
     display: inline-block;
     transition:0.3s;
-    background: url('./image/circle-right-solid.svg') 0 0 no-repeat;
+    background: url('../image/circle-right-solid.svg') 0 0 no-repeat;
 }
 
 input[id*="answer"] + label+ ul{
@@ -125,7 +125,7 @@ input[id*="answer"]:checked + label em{
     margin-top: -.5rem;
     display: inline-block;
     transition:0.3s;
-    background: url('./image/circle-xmark-solid.svg') 0 0 no-repeat;
+    background: url('../image/circle-xmark-solid.svg') 0 0 no-repeat;
 }
 
 body::-webkit-scrollbar{ width: 8px;}

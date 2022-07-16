@@ -83,7 +83,7 @@ input[id*="reg"] + label em{
     margin-top: -.5rem;
     display: inline-block;
     transition:.3s;
-    background: url('./image/angle-right-solid.svg') 0 0 no-repeat;
+    background: url('../image/angle-right-solid.svg') 0 0 no-repeat;
 }
 
 input[id*="reg"] + label+ ul{
@@ -99,7 +99,7 @@ input[id*="reg"]:checked + label+ ul{
 input[id*="reg"]:checked + label em{
 
     transition:.3s;
-    background: url('./image/angle-down-solid.svg') 0 0 no-repeat;
+    background: url('../image/angle-down-solid.svg') 0 0 no-repeat;
 }
 
 
