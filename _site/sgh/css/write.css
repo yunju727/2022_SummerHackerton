@@ -10,20 +10,34 @@
     justify-content: center;
 }
 section {
-    width:90%;
-    margin-top:12rem;
+    width:100%;
+    margin-top:11rem;
 }
 .wr{
     flex-direction: column;
 }
+.wr div{
+    flex-basis: 50%;
+}
+.wr div.submit{
+    display: flex;
+    justify-content: right;
+    align-items:flex-end;
+
+}
+
 .wr#select{
-    width:30%
+    width:25%;
+    padding-left: 5%;
 }
 .wr#write{
     width:70%;
 }
 .content div.note-editable{
-    height:50vh;
+    height:45vh;
+}
+div.panel{
+    margin-bottom:0;
 }
 .content input#tit{
     padding-left: 3rem;
