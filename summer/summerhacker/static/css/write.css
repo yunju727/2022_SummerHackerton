@@ -1,3 +1,8 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
 .container, section, .wr{
     display:flex;
 }
@@ -11,7 +16,7 @@
 }
 section {
     width:100%;
-    margin-top:11rem;
+    margin-top:8rem;
 }
 
 .wr{
