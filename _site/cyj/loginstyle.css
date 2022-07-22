@@ -97,11 +97,12 @@ section form{
 @media (max-width:1000px){
 
     .login-form{
+        margin-top: 10rem;
+        height: 60vh;
         padding: 1rem;
         border-radius: 1rem;
         width: 70%;
     }
-
     .login-form form{
         padding: 0 .5rem;
     }
