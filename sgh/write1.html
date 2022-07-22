@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeeksforGeeks Editor</title>
+    <!-- include libraries(jQuery, bootstrap) -->
+    <!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet"> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+
+    <!-- include summernote css/js-->
+    <script src="https://kit.fontawesome.com/f76d1c9984.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="summernote/summernote.css" rel="stylesheet">
+    <script src="summernote/summernote.js"></script>
+    <link href="css/write.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
+    <style>
+        body {
+            background: rgb(33, 130, 255);
+            background: linear-gradient(90deg, rgba(33, 130, 255, 1) 0%, rgba(90, 90, 255, 1) 31%, rgba(135, 50, 255, 1) 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/sidemenu.js"></script>
+
+
+    <div class="container">
+        <div class="custom-shape-divider-top-1657463136">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <header class="main">
+            <script src="js/header.js"></script>
+        </header>
+        <script src="js/usermenu.js"></script>
+        <section class="content">
+            <div class="wr" id="write">
+                <input type="text" placeholder="제목" id="tit">
+
+                <div id="summernote">여행 계획을 작성해주세요</div>
+                <script>
+                    $(document).ready(function () {
+                        $('#summernote').summernote();
+                    });
+
+                </script>
+            </div>
+            <div class="wr" id="select">
+                <div>
+                    <script src="js/star.js"></script>
+
+                    <form>
+                        <input type="number" placeholder="나이" min="10" max="100" step="1" /> <br />
+                        <input type="range" min="1" max="10" step="1" />
+                    </form>
+                    <form>
+                        <input type="number" placeholder="전체 비용" min="50000" max="1000000" step="1" /> <br />
+                        <input type="range" min="1" max="10000" step="1" />
+                    </form>
+
+                    <span class="star">
+                        ★★★★★
+                        <span>★★★★★</span>
+                        <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+                    </span>
+                </div>
+
+
+                <div class="submit">
+                    <input type="submit" value="제출하기">
+                </div>
+
+            </div>
+
+
+        </section>
+        <!-- <footer>
+            <div class="submit">
+                <input type="submit" value="제출하기">
+            </div>
+        </footer> -->
+
+    </div>
+</body>
+
+</html>
