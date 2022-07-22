@@ -19,5 +19,5 @@ import summerhacker.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', summerhacker.views.index, name='index')
+    path('', summerhacker.views.index, name='index'),
 ]
