@@ -36,8 +36,6 @@ section form{
     flex-basis: 24vh; flex-shrink: 0;
 }
 
-
-
 .login-form h1 {
     font-size: 1.5rem; color: rgb(93, 98, 254);
     text-align: center;
