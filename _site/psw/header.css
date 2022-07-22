@@ -17,23 +17,23 @@ header{
     /* background:white; */
     z-index:50;
 }
-header>ul{
+header>ul.mainheader{
     display: flex;
     padding:0;
 }
-header>ul>li{
+header>ul.mainheader>li{
     list-style-type: none;
 }
-header>ul#right>li{
+header>ul.mainheader#right>li{
     margin-right:1rem;
 }
-header>ul#right>li:last-child{
+header>ul.mainheader#right>li:last-child{
     margin-right:3rem;
 }
-header>ul#left>li{
+header>ul.mainheader#left>li{
     margin-left:1rem;
 }
-header>ul#left>li:nth-child(1){
+header>ul.mainheader#left>li:nth-child(1){
     margin-left:3rem;
 }
 header .menu{
@@ -50,6 +50,46 @@ header a{
 header a:visited{
     text-decoration: none;
     color: rgb(76, 76, 76);
+}
+.usermenu{
+    position:absolute;
+    top: 4.5rem;
+    right:2.2rem;
+    background:black;
+    border-radius: .5rem;
+}
+#guide{
+    text-align: center;
+    padding: .5rem 0;
+}
+.usermenu ul{
+    padding:0; margin:0;
+}
+.usermenu li{
+    list-style-type: none;
+    margin:0;
+}
+.usermenu a{
+    border: 1px solid white;
+    display:block;
+    padding:.5rem 3rem .5rem 1rem;
+    color: rgb(76, 76, 76);
+    /* text-shadow: 1px 1px 1px rgba(0,0,0,1); */
+    text-decoration: none;
+}
+.usermenu a:visited{
+    text-decoration: none;
+    color: rgb(76, 76, 76);
+}
+.usermenu::before{
+    content:'';
+    position:absolute;
+    top:-.25rem;
+    right:1.25rem;
+    width:.5rem;
+    height: .5rem;
+    background: black;
+    transform:rotate(45deg);
 }
 
 .hvr-float-shadow {
@@ -118,16 +158,16 @@ header a:visited{
     header{
         height: 1rem;
     }
-    header>ul#right>li{
+    header>ul.mainheader#right>li{
         margin-right:.2rem;
     }
-    header>ul#right>li:last-child{
+    header>ul.mainheader#right>li:last-child{
         margin-right:1rem;
     }
-    header>ul#left>li{
+    header>ul.mainheader#left>li{
         margin-left:.2rem;
     }
-    header>ul#left>li:nth-child(1){
+    header>ul.mainheader#left>li:nth-child(1){
         margin-left:1rem;
     }
 
