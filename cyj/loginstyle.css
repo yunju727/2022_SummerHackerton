@@ -1,13 +1,13 @@
-* {margin: 0;padding: 0;}
 html, body{
-    font-size: 20px;
     height: 100%;
+    margin: 0;
+    font-size: 20px;
 }
 body{
     display: flex;
     justify-content: center;
 }
-section{
+.login-form{
     display: flex;
     flex-direction: column;
     background-color: rgb(224, 228, 255);
@@ -18,10 +18,10 @@ section{
     margin-bottom: 6.5rem;
     justify-content: center;
 }
-section form{
+.login-form form{
     padding: 0 2rem;
 }
-section form, section h1, section .btn-area{
+.login-form form, .login-form h1, .login-form .btn-area{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,6 +39,7 @@ section form{
 .login-form h1 {
     font-size: 1.5rem; color: rgb(93, 98, 254);
     text-align: center;
+    margin: 0;
 }
 .guide{
     font-size: .8rem;
@@ -70,9 +71,8 @@ section form{
     padding: .6rem 0;
     background: rgb(146, 150, 250);
     color: rgb(247, 247, 247);
-    font-size: 20px;
     border: none;
-    border-radius: 25px;
+    border-radius: 1rem;
     cursor:pointer;
     font-size: .9rem;
 }
@@ -91,4 +91,33 @@ section form{
 .btn-area button a:visited{
     text-decoration: none;
     color: rgb(230, 230, 230);
+}
+
+
+@media (max-width:1000px){
+
+    .login-form{
+        margin-top: 10rem;
+        height: 55vh;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 70%;
+    }
+    .login-form form{
+        padding: 0 .5rem;
+    }
+
+    .btn-area button {
+        padding: .5rem 0;
+        font-size: .75rem;
+    }
+
+    .btn-area button a{
+        text-decoration: none;
+        padding: .6rem .2rem;
+        color: rgb(230, 230, 230);
+    }
+    .login-form h1{
+        margin:0
+    }
 }
