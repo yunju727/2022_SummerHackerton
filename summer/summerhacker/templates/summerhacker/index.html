@@ -1,46 +1,55 @@
 <!-- <!DOCTYPE html> -->
+{% load static %}
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRAVEL</title>
-    <link rel="stylesheet" href="/static/css/style1.css">
-    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
     <link rel="stylesheet" href="/static/css/sidebar.css">
     <!-- <link rel="stylesheet" href="footer.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/f76d1c9984.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
+
 <body>
     <script src="/static/js/sidemenu.js"></script>
 
     <div class="container">
         <div class="custom-shape-divider-top-1657463136">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
             </svg>
         </div>
-        <header class = "main">
+        <header class="main">
             <script src="/static/js/header.js"></script>
         </header>
         <script src="/static/js/usermenu.js"></script>
 
         <section class="content">
-            <main class = "item"> 
-                <h1>TITLE,</h1>           
+            <main class="item">
+                <h1>TITLE,</h1>
                 <h2>Helping your Travel Plan</h2>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus a, assumenda impedit dicta explicabo tempore blanditiis laudantium consequatur expedita quia.</p> -->
                 <!-- <br><a href="#">GO TO SEE PLANS</a> -->
             </main>
-            <aside class = "item">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus a, assumenda impedit dicta explicabo tempore blanditiis laudantium consequatur expedita quia.</p>
-                <ol id = "ko">
+            <aside class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus a, assumenda impedit dicta
+                    explicabo tempore blanditiis laudantium consequatur expedita quia.</p>
+                <ol id="ko">
                     <li>여행 계획을 한 눈에</li>
                     <li>지역 별로 확인</li>
                     <li>알려지지 않은 관광지가 알고 싶다면</li>
@@ -51,4 +60,5 @@
         </section>
     </div>
 </body>
+
 </html>
