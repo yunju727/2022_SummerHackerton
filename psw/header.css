@@ -53,14 +53,21 @@ header a:visited{
 }
 .usermenu{
     position:absolute;
+    visibility: hidden;
     top: 4.5rem;
     right:2.2rem;
     background:black;
+    color: rgb(76, 76, 76);
     border-radius: .5rem;
+}
+.usermenu.active{
+    visibility: visible;
 }
 #guide{
     text-align: center;
-    padding: .5rem 0;
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    border-bottom: 1px solid white;
 }
 .usermenu ul{
     padding:0; margin:0;
@@ -70,8 +77,8 @@ header a:visited{
     margin:0;
 }
 .usermenu a{
-    border: 1px solid white;
     display:block;
+    font-size: .8rem;
     padding:.5rem 3rem .5rem 1rem;
     color: rgb(76, 76, 76);
     /* text-shadow: 1px 1px 1px rgba(0,0,0,1); */
