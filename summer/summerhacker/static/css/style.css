@@ -3,10 +3,9 @@ html {
 }
 
 
-
 .star {
     position: relative;
-    font-size: 2rem;
+    font-size: 1rem;
     color: #ddd;
 }
 
@@ -23,7 +22,7 @@ html {
     width: 0;
     position: absolute;
     left: 0;
-    color: red;
+    color: rgb(255, 247, 92);
     overflow: hidden;
     pointer-events: none;
 }

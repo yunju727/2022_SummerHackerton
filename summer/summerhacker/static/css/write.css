@@ -39,8 +39,11 @@ section {
 .wr#write{
     width:70%;
 }
+
+.wr#write input{
+    margin-bottom : .5rem;
+}
 .content{
-    height:45vh;
     padding-left: .5rem;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: .8rem;
@@ -50,7 +53,11 @@ section {
 }
 div.panel{
     margin-bottom:0;
+    height: 60vh;
 }
+/* div.note-editor{
+    height: 100%;
+} */
 .content input#tit{
     padding-left: .5rem;
     height:1.5rem;
