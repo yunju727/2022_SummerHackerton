@@ -19,7 +19,7 @@ var sidemenu = `    <div id = "sidemenu" class="sidenav">
     </li>
     <li>
         <input type="checkbox" id = "answer02">
-        <label for="answer02"><a href="../sgh/write1">Share Plan</a><em></em></label>
+        <label for="answer02"><a href="write1.html">Share Plan</a><em></em></label>
     </li>
     <li>
     <input type="checkbox" id = "answer03">
