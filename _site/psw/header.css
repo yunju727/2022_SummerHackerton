@@ -197,6 +197,18 @@ header a:visited{
         width: calc(230% + 1.3px);
         height: 140px;
     }
+    .usermenu{
+        top: 4.5rem;
+        right:.2rem;
+    }
+    #guide{
+        padding: .5rem 1rem;
+        font-size: .7rem;
+    }
+    .usermenu a{
+        font-size: .65rem;
+        padding:.5rem 3rem .5rem 1rem;
+    }
 }
 
 body::-webkit-scrollbar{ width: 8px;}
