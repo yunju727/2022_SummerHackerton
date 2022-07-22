@@ -198,8 +198,8 @@ header a:visited{
         height: 140px;
     }
     .usermenu{
-        top: 4.5rem;
-        right:.2rem;
+        top: 3.5rem;
+        right:.5rem;
     }
     #guide{
         padding: .5rem 1rem;
@@ -208,6 +208,12 @@ header a:visited{
     .usermenu a{
         font-size: .65rem;
         padding:.5rem 3rem .5rem 1rem;
+    }
+    .usermenu::before{
+        top:-.25rem;
+        right:1.25rem;
+        width:.5rem;
+        height: .5rem;
     }
 }
 
