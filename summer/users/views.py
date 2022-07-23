@@ -1,5 +1,6 @@
-from django.shortcuts import render
-from django.contrib.auth import authenticate, login
+from django.shortcuts import redirect, render
+from django.contrib.auth import authenticate, login, logout
+from django.shortcuts import redirect
 # Create your views here.
 
 def login_view(request):
@@ -11,3 +12,7 @@ def login_view(request):
             login(request, user)
         else: print("실패")
     return render(request, "users/login.html")
+
+def logout_view(request):
+    logout(request)
+    return redirect("user:login")
