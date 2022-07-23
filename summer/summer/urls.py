@@ -27,5 +27,5 @@ urlpatterns = [
     path('bug report.html', summerhacker.views.bugreport_page),
     path('user.html', summerhacker.views.user_page),
     path('write1.html', summerhacker.views.write1_page),
-    path('auth/', include("users.urls")),
+    path('logout', users.views.logout_view),
 ]

@@ -67,7 +67,7 @@ header a:visited{
     font-size: .85rem;
     border-bottom: 2px solid rgb(247, 247, 247);
 }
-#prof{
+#prof, #prof1{
     border-bottom: .5px solid rgb(247, 247, 247);
 }
 .usermenu ul{
