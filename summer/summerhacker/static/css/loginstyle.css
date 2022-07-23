@@ -7,6 +7,41 @@ body{
     display: flex;
     justify-content: center;
 }
+#temp{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 47%;
+    color: rgb(230, 230, 230);
+}
+#temp button {
+    width: 20rem;
+    padding: .6rem 0;
+    background: rgb(230, 230, 230);
+    color: rgb(93, 98, 254);
+    border: none;
+    border-radius: 1rem;
+    font-size: .9rem;
+}
+
+#temp button:hover{
+    background: rgb(218, 218, 218);
+}
+#temp button a{
+    font-weight: bold;
+    text-decoration: none;
+    padding: .6rem 1rem;
+    color: rgb(93, 98, 254);
+}
+#temp button a:hover{
+    text-decoration: none;
+}
+
+#temp  button a:visited{
+    text-decoration: none;
+    color: rgb(93, 98, 254);
+}
+
 .login-form{
     display: flex;
     flex-direction: column;
@@ -43,7 +78,7 @@ section form{
 }
 .guide{
     font-size: .8rem;
-    margin-bottom: .3rem;
+    margin-top: 1rem;
     color:rgb(78, 78, 78);
 }
 
@@ -66,7 +101,7 @@ section form{
 .btn-area {
     text-align: center;
 }
-.btn-area button {
+.btn-area input#btn {
     width: 80%;
     padding: .6rem 0;
     background: rgb(146, 150, 250);
@@ -77,12 +112,12 @@ section form{
     font-size: .9rem;
 }
 
-.btn-area button:hover{
+.btn-area input#btn:hover{
     background: rgb(93, 98, 254);
     color: rgb(230, 230, 230);
 }
-
-.btn-area button a{
+/* 
+.btn-area input a{
     text-decoration: none;
     padding: .6rem 2rem;
     color: rgb(230, 230, 230);
@@ -91,7 +126,7 @@ section form{
 .btn-area button a:visited{
     text-decoration: none;
     color: rgb(230, 230, 230);
-}
+} */
 
 
 @media (max-width:1000px){

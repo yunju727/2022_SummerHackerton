@@ -1,10 +1,9 @@
 var usermenu = `
 <div class="usermenu">
-    <li id="guide">Please Login</li>
+    <li id="guide">Hello User</li>
     <ul id="usermenu">
             <li><a href="user.html" id="prof">Profile</a></li>
-            <li><a href="login.html" id="prof1">Sign in</a></li>
-            <li><a href="logout">Sign Out</a></li>
+            <li><a href="/auth/logout">Sign Out</a></li>
     </ul>
 </div>`
 
