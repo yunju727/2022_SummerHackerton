@@ -16,14 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 import summerhacker.views
+import users.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', summerhacker.views.index),
     path('index.html', summerhacker.views.index),
-    path('login.html', summerhacker.views.login_page),
+    path('login.html', users.views.login_view),
     path('region.html', summerhacker.views.region_page),
     path('bug report.html', summerhacker.views.bugreport_page),
     path('user.html', summerhacker.views.user_page),
     path('write1.html', summerhacker.views.write1_page),
+    path('auth/', include("users.urls")),
 ]
