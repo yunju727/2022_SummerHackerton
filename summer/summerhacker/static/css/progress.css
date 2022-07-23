@@ -1,0 +1,26 @@
+body {
+  background-color: #222;
+}
+
+.circle_progress_wrap {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.circle_progress {
+  transform: rotate(-90deg);
+}
+
+.frame,
+.bar {
+  fill: none;
+}
+
+.frame {
+  stroke: #e6e6e6;
+}
+
+.bar {
+  stroke: #03c75a;
+}/*# sourceMappingURL=progress.css.map */

@@ -24,6 +24,7 @@
     <link href="/static/css/header.css" rel="stylesheet">
     <link href="/static/css/sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/css.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/progress.css" />
     <style>
         body {
             background: rgb(33, 130, 255);
@@ -40,7 +41,7 @@
         <header class="main">
             <script src="/static/js/header.js"></script>
         </header>
-        
+
         <section class="content">
             <div class="wr" id="write">
                 <input type="text" placeholder="제목" id="tit">
@@ -62,15 +63,27 @@
             <div class="wr" id="select">
                 <div class="select">
                     <script src="/static/js/star.js"></script>
+                    <script src="/static/js/progress2.js"></script>
 
-                    <form>
+                    <div class="circle_progress_wrap">
+
+                        <svg class="circle_progress" width="120" height="120" viewBox="0 0 120 120">
+                            <circle class="frame" cx="60" cy="60" r="54" stroke-width="12" />
+                            <circle class="bar" cx="60" cy="60" r="54" stroke-width="12" />
+                        </svg>
+                        <input id="control" type="range" value="60" />
+                        <strong class="value"></strong>
+                    </div>
+
+                    <!-- <form>
                         <input type="number" placeholder="나이" min="10" max="100" step="1" /> <br />
                         <input type="range" min="1" max="10" step="1" />
-                    </form>
-                    <form>
+                    </form> -->
+
+                    <!-- <form>
                         <input type="number" placeholder="전체 비용" min="50000" max="1000000" step="1" /> <br />
                         <input type="range" min="1" max="10000" step="1" />
-                    </form>
+                    </form> -->
 
                     <span class="star">
                         ★★★★★
