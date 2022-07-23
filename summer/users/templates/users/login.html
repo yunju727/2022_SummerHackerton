@@ -32,8 +32,8 @@
         <section class="login-form">
             <h1>LOGIN</h1>
 
-            <form acton="">
-
+            <form acton="" method="POST">
+                {% csrf_token %}
                 <div class="int-area">
                     <div class="guide">USER EMAIL</div>
                     <input type="email" placeholder="email">
@@ -41,37 +41,13 @@
 
                 <div class="int-area">
                     <div class="guide">PASSWORD</div>
-                    <input type="text" placeholder="password">
+                    <input type="password" placeholder="password">
                 </div>
 
-                
+                <div class="btn-area">
+                    <input type="submit" id="btn" value="LOGIN">
+                </div>
             </form>
-            <div class="btn-area">
-                <button id="btn"><a href="javascript:kakaoLogin();">LOGIN</a></button>
-            </div>
-
-            <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-            
-            <script>
-                window.Kakao.init("b2f40460bfbcf51ae3063f91dbeb53d6");
-
-                function kakaoLogin() {
-                    window.Kakao.Auth.login({
-                        scope: 'profile_nickname,account_email, gender, age_range',
-                        success: function (authObj) {
-                            console.log(authObj);
-                            window.Kakao.API.request({
-                                url: '/v2/user/me',
-                                success: res => {
-                                    const kakao_account = res.kakao_account;
-                                    console.log(kakao_account);
-                                }
-                            });
-
-                        }
-                    });
-                }
-            </script>
         </section>
     </body>
 </html>
