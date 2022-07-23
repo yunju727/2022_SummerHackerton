@@ -1,14 +1,14 @@
 from django.shortcuts import render
-from .models import Notice
-from .models import User
+# from .models import Notice
+# from .models import User
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
-from .forms import NoticeWriteForm
-from users.decorators import admin_required
+# from .forms import NoticeWriteForm
+# from users.decorators import admin_required
 
 
-@login_message_required
-@admin_required
+# @login_message_required
+# @admin_required
 def notice_write_view(request):
     if request.method == "POST":
         form = NoticeWriteForm(request.POST)
