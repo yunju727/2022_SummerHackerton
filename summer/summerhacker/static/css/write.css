@@ -21,8 +21,11 @@ section {
 .wr{
     flex-direction: column;
 }
-.wr div{
+.wr div#summernote{
     flex-basis: 50%;
+}
+.wr div.select .se{
+    flex-basis: 25%;
 }
 .wr div.submit{
     display: flex;
@@ -30,13 +33,52 @@ section {
     align-items:flex-end;
 
 }
+.wr div.select{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 
 .wr#select{
+    color: rgb(231, 231, 231);
+    background-color: rgba(224, 228, 255, .3);
+    border-radius: .5rem;
     width:25%;
-    padding-left: 5%;
+    padding: 2%;
+    margin-left: 3%;
+}
+.wr#select input#money{
+    border: 0;
+    color: rgb(231, 231, 231);
+    border-bottom : 1px solid rgb(231, 231, 231);
+    background: transparent;
+    width : 60%;
+    outline: 0;
+}
+.wr#select input#money::-webkit-input-placeholder{
+    color: rgb(231, 231, 231);
+
 }
 .wr#write{
     width:70%;
+}
+.word{
+    margin-bottom: .5rem;
+}
+.pos button{
+    padding: .2rem .5rem;
+    margin-right: .5rem;
+    border-radius: 2rem;
+    color: rgb(247, 247, 247);
+    border: 1px solid rgb(231, 231, 231);
+    background: transparent;
+}
+
+.pos button:hover{
+    border-color:rgb(93, 98, 254);
+    background: rgb(93, 98, 254);
+    color: rgb(247, 247, 247);
 }
 
 .wr#write input{
@@ -91,8 +133,9 @@ div.panel{
     }
     .wr#select{
         margin-top: 1rem;
-        width:80%;
-        padding-left: 0;
+        width:75%;
+        padding: 1rem;
+        margin-left: 0;
     }
     .submit input{
         margin-top:1rem;

@@ -23,7 +23,7 @@
     font-size: .75rem;
     display: block;
     color: rgb(91, 91, 91);
-    transition: .3s;
+    transition-duration: .3s;
     margin: 0 .75rem;
     padding: .5rem .75rem;
     background-color: white;
@@ -52,7 +52,7 @@
     text-decoration: none;
     display: block;
     color: rgb(91, 91, 91);
-    transition: .3s;
+    transition-duration: .3s;
     padding: .5rem .75rem;
     position: absolute;
     padding-right:0; margin-right: 0;
@@ -106,13 +106,13 @@ input[id*="answer"] + label em{
     width: 1rem; height: 1rem;
     margin-top: -.5rem;
     display: inline-block;
-    transition:0.3s;
+    transition-duration:0.3s;
     background: url('../image/circle-right-solid.svg') 0 0 no-repeat;
 }
 
 input[id*="answer"] + label+ ul{
     max-height: 0;
-    transition: all .35s;
+    transition-duration: all .35s;
     overflow: hidden;
 }
 
@@ -126,7 +126,7 @@ input[id*="answer"]:checked + label em{
     width: 1rem; height: 1rem;
     margin-top: -.5rem;
     display: inline-block;
-    transition:0.3s;
+    transition-duration:0.3s;
     background: url('../image/circle-xmark-solid.svg') 0 0 no-repeat;
 }
 
