@@ -7,6 +7,41 @@ body{
     display: flex;
     justify-content: center;
 }
+#temp{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 47%;
+    color: rgb(230, 230, 230);
+}
+#temp button {
+    width: 20rem;
+    padding: .6rem 0;
+    background: rgb(230, 230, 230);
+    color: rgb(93, 98, 254);
+    border: none;
+    border-radius: 1rem;
+    font-size: .9rem;
+}
+
+#temp button:hover{
+    background: rgb(218, 218, 218);
+}
+#temp button a{
+    font-weight: bold;
+    text-decoration: none;
+    padding: .6rem 1rem;
+    color: rgb(93, 98, 254);
+}
+#temp button a:hover{
+    text-decoration: none;
+}
+
+#temp  button a:visited{
+    text-decoration: none;
+    color: rgb(93, 98, 254);
+}
+
 .login-form{
     display: flex;
     flex-direction: column;
@@ -43,7 +78,7 @@ section form{
 }
 .guide{
     font-size: .8rem;
-    margin-bottom: .3rem;
+    margin-top: 1rem;
     color:rgb(78, 78, 78);
 }
 
