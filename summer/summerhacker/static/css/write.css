@@ -66,13 +66,14 @@ section {
     padding: .2rem .5rem;
     margin-right: .5rem;
     border-radius: 2rem;
+    color: rgb(247, 247, 247);
     border: 1px solid rgb(231, 231, 231);
     background: transparent;
 }
 
 .pos button:hover{
-    border-color:rgb(146, 150, 250);
-    background: rgb(146, 150, 250);
+    border-color:rgb(93, 98, 254);
+    background: rgb(93, 98, 254);
     color: rgb(247, 247, 247);
 }
 
