@@ -25,11 +25,9 @@ var sidemenu = `    <div id = "sidemenu" class="sidenav">
     <input type="checkbox" id = "answer03">
     <label for="answer03">Bug report<em></em></label>
         <ul>
-            <li><a href="#" id = "first">kakaotalk</a></li>
-            <li><a href="#">instagram</a></li>
-            <li><a href="#">mail</a></li>
+            <li><a href="https://open.kakao.com/o/siTunxre" id = "first">kakaotalk</a></li>
+            <li><a href="https://www.instagram.com/s__won_._/">instagram</a></li>
             <li><a href="bug report.html" id = "last">report page</a></li>
-
         </ul>
     </li>
 </ul>
