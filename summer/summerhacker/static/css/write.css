@@ -32,6 +32,8 @@ section {
 }
 
 .wr#select{
+    background-color: rgb(224, 228, 255);
+    border-radius: .5rem;
     width:25%;
     padding-left: 5%;
 }

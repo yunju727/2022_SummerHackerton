@@ -23,7 +23,8 @@
     <link href="/static/css/bootstrap.css" rel="stylesheet">
     <link href="/static/css/header.css" rel="stylesheet">
     <link href="/static/css/sidebar.css" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/css.css">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <script src="/static/js/star.js"></script>
     <style>
         body {
             background: rgb(33, 130, 255);
@@ -61,21 +62,23 @@
             </div>
             <div class="wr" id="select">
                 <div class="select">
-                    <script src="/static/js/star.js"></script>
-
-                    <form>
-                        <input type="number" placeholder="나이" min="10" max="100" step="1" /> <br />
-                        <input type="range" min="1" max="10" step="1" />
-                    </form>
-                    <form>
-                        <input type="number" placeholder="전체 비용" min="50000" max="1000000" step="1" /> <br />
-                        <input type="range" min="1" max="10000" step="1" />
-                    </form>
-
+                    <div>
+                        <div>경비</div>
+                        <input type="number" placeholder="(만)원" min="5" max="100" step="1" /> <br/>
+                    </div>
+                    <div>
+                        <div>실행 가능성</div>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                    </div>
                     <span class="star">
-                        ★★★★★
-                        <span>★★★★★</span>
-                        <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+                        <div>만족도</div>
+                        <div id="star">
+                            ★★★★★
+                            <span>★★★★★</span>
+                            <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+                        </div>
                     </span>
                 </div>
 
